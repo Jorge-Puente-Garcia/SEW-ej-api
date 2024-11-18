@@ -1,0 +1,33 @@
+/*Especificidad 002*/
+body>section {
+    display: grid;
+    gap: 1.25em;
+    max-width: 75em; 
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    margin: auto;
+}
+/*Especificidad 003*/
+body>section>article {
+    background-color: #ffffff;
+    border: 0.1em solid #ddd;
+    border-radius: 0.5em;
+    padding: 1em;
+    text-align: center;
+}
+
+/*Especificidad 003*/
+body>section> img {
+    width: 3.75em;
+    height: 3.75em;
+    margin-top: 0.5em;
+}
+/*Especificidad 004*/
+body>section>article>h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+/*Especificidad 004*/
+body>section>article>p {
+    font-size: 1em;
+    margin: 0.25em 0;
+}

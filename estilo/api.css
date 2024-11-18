@@ -1,0 +1,31 @@
+/*
+Puente García Jorge 
+UO294228
+*/
+/*
+Especifidad 002
+*/
+
+#car {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#steering-wheel {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  transform-origin: center;
+}
+
+#steering-wheel img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#speed {
+  margin-top: 20px;
+  font-size: 24px;
+}

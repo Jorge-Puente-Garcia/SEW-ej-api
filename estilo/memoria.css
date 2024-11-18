@@ -1,0 +1,61 @@
+/*
+Puente García Jorge 
+UO294228
+*/
+  body>section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+    margin: 1em;
+  }
+ body>section>article{
+    flex: 0 0 calc(25% - 1em); 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8em;
+    border: 0.2em solid #000000;
+    border-radius: 1em;
+    background-color: #bafcb5;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+    position: relative;
+}
+
+article>h3, article img {
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+article> h3 {
+    
+    transform: rotateY(0deg);
+    background-color: #feffb2;
+    margin: 0;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+article> img {
+    transform: rotateY(180deg);
+    max-width: 100%; 
+    max-height: 100px; 
+    object-fit: contain;
+}
+
+
+article[data-state=flip] {
+    transform: rotateY(180deg);
+}
+article[data-state=unflip] {
+    transform: rotateY(0deg);
+}
+article[data-state=revealed] {
+    transform: rotateY(180deg);
+}
+
+
